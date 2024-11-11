@@ -1,3 +1,4 @@
+import java.util.*;
 class fibonacci{
     public static int fibo(int n){
         int result;
@@ -11,7 +12,12 @@ class fibonacci{
 
     }
     public static void main(String[] args) {
-        System.out.println(fibo(7));
+        System.out.println("enter numbr");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<=n;i++){
+            System.out.print(fibo(i)+" ");
+        }
         
     }
 }
